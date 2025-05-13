@@ -1,10 +1,12 @@
+import FilterSection from "./components/FilterSection";
+import "./css/styles.css";
+
 function App() {
   
   return (
-    <>
-      Yea!
-    </>
-  )
+      <>
+        <FilterSection />
+      </>
+    );
 }
-
 export default App
