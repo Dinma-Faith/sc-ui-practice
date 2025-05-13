@@ -7,42 +7,53 @@ const ispBtns = ["MTN", "MTN", "MTN", "MTN", "MTN"];
 
 export default function FilterSection() {
   const [activeLocation, setActiveLocation] = useState("Ikeja");
+  const [selectedISP, setSelectedISP] = useState("");
+
+  const handleISPClick = (isp) => {
+    setSelectedISP(isp);
+    console.log("Selected ISP:", isp);
+  };
 
   return (
-    <main className="container" >
+    <main className="container">
       <div className="filter-container">
-      <section className="location-tabs">
-        <p className="filter-label">
-          <img src={locationIcon} alt="Location icon" className="tab-icon" />
-          Filter Internet Service Provider data based on location
-        </p>
+        <section className="location-tabs">
+          <p className="filter-label">
+            <img src={locationIcon} alt="Location icon" className="tab-icon" />
+            Filter Internet Service Provider data based on location
+          </p>
 
-        <div className="filter-button">
-          {locations.map((location) => (
-            <button
-              key={location}
-              className={activeLocation === location ? "active" : ""}
-              onClick={() => setActiveLocation(location)}>
-              {location}
-            </button>
-          ))}
-        </div>
-      </section>
+          <div className="filter-button">
+            {locations.map((location) => (
+              <button
+                key={location}
+                className={activeLocation === location ? "active" : ""}
+                onClick={() => setActiveLocation(location)}
+              >
+                {location}
+              </button>
+            ))}
+          </div>
+        </section>
 
-      <section className="isp-tabs">
-        <p className="filter-label">
-          <img src={searchIcon} alt="Search icon" className="search-icon" />
-          Filter Internet data by service provider available
-        </p>
+        <section className="isp-tabs">
+          <p className="filter-label">
+            <img src={searchIcon} alt="Search icon" className="search-icon" />
+            Filter Internet data by service provider available
+          </p>
 
-        <div className="isp-buttons">
-          {ispBtns.map((ispBtn, idx) => (
-            <button key={idx} className="isp-button">
-              {ispBtn}
-            </button>
-          ))}
-        </div>
-      </section>
+          <div className="isp-buttons">
+            {ispBtns.map((ispBtn, idx) => (
+              <button
+                key={idx}
+                className={`isp-button ${selectedISP === ispBtn ? "active-isp" : ""}`}
+                onClick={() => handleISPClick(ispBtn)}
+              >
+                {ispBtn}
+              </button>
+            ))}
+          </div>
+        </section>
       </div>
     </main>
   );
