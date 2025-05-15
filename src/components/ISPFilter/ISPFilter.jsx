@@ -1,8 +1,9 @@
-import searchIcon from "../../assets/icons/filtermail.svg";
+export default function ISPFilter({ ispOptions, selectedISP, setSelectedISP, searchIcon }) {
+  const handleClick = (isp) => {
+    setSelectedISP(isp);
+    console.log("Selected ISP:", isp);
+  };
 
-const ispOptions = ["MTN", "MTN", "MTN", "MTN","MTN"];
-
-export default function ISPFilter({ selectedISP, onSelect }) {
   return (
     <section className="isp-filter">
       <p className="filter-label">
@@ -11,11 +12,11 @@ export default function ISPFilter({ selectedISP, onSelect }) {
       </p>
 
       <div className="chip-buttons">
-        {ispOptions.map((isp, idx) => (
+        {ispOptions.map((isp) => (
           <button
-            key={idx}
+            key={isp}
             className={`chip ${selectedISP === isp ? "active-chip" : ""}`}
-            onClick={() => onSelect(isp)}
+            onClick={() => handleClick(isp)}
           >
             {isp}
           </button>

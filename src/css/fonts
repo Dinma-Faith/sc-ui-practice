@@ -1,3 +1,5 @@
+  /* IBM Plex Sans Devanagari */
+
 @font-face {
   font-display: swap;
   font-family: 'IBM Plex Sans Devanagari';
@@ -20,4 +22,13 @@
   font-style: normal;
   font-weight: 700;
   src: url('/src/assets/fonts/IBMPlexSansDevanagari-Bold.ttf') format('woff2');
+}
+/* INTER */
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/src/assets/fonts/Inter-VariableFont_opsz\,wght.ttf') format('woff2'); 
 }

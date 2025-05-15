@@ -10,7 +10,7 @@ export default function LocationFilter({ activeLocation, onChange }) {
         Filter Internet Service Provider data based on location
       </p>
 
-      <div className="filter-buttons">
+      <div className="location-filter-buttons">
         {locations.map((location) => (
           <button
             key={location}

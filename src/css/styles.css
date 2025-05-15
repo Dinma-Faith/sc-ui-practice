@@ -1,3 +1,4 @@
 @import './rootstyles.css';
+@import './filter.css';
 @import '../components/LocationFilter/LocationFilter.css';
 @import '../components/ISPFilter/ISPFilter.css';

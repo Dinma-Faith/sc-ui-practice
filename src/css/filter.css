@@ -1,0 +1,24 @@
+.layout {
+  background-color: var(--off-white);
+  padding: 32px;
+}
+
+.container {
+  border: 1px solid var(--grey);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--light-grey-200);
+  border-radius: 8px;
+}
+
+.filter-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 18px;
+  font-weight: var(--fw-semibold);
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: var(--dark-grey);
+  padding-top: 10px;
+  padding-left: 19px;
+}
