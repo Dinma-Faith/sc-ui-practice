@@ -4,7 +4,7 @@ import ISPFilter from "./ISPFilter/ISPFilter";
 import searchIcon from "../assets/icons/filtermail.svg";
 const ispBtns = ["MTN", "Airtel", "Glo", "9mobile"];
 
-export default function FilterSection() {
+export default function OverviewPage() {
   const [activeLocation, setActiveLocation] = useState("Ikeja");
   const [selectedISP, setSelectedISP] = useState("MTN");
 

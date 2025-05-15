@@ -1,10 +1,10 @@
-import FilterSection from "./components/FilterSection";
+import OverviewPage from "./components/OverviewPage";
 
 function App() {
   
   return (
       <>
-        <FilterSection />
+        <OverviewPage />
       </>
     );
 }
