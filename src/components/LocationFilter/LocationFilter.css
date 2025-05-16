@@ -4,36 +4,37 @@
   font-family: var(--f-family);
 }
 
-.location-filter:hover,
-.location-filter.active {
-  color: var(--green);
+.location-label {
+  font-size: 1.125rem;
+  color: var(--dark-grey);
 }
 
 .location-filter-buttons {
   display: flex;
   gap: 8%;
   background-color: var(--white);
-  padding-left: 19px;
+  padding-left: 1.1875rem;
   font-family: var(--f-family);
 }
 
 .location-filter-buttons button {
   font-family: var(--f-family);
-  width: 100px;
+  width: 6.25rem;
   display: flex;
   justify-content: flex-start;
-  padding-right: 15px;
+  padding-right: 0.9375rem;
   border: none;
-  padding-block: 14px;
+  padding-block: 0.875rem;
   background-color: transparent;
   transition: all 0.3s ease;
   color: var(--light-grey);
   font-weight: var(--fw-bold);
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .location-filter-buttons button:hover,
 .location-filter-buttons button.active {
   color: var(--green);
   border-bottom: 1px solid var(--green);
+  cursor: pointer;
 }

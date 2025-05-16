@@ -6,7 +6,7 @@ export default function ISPFilter({ ispOptions, selectedISP, setSelectedISP, sea
 
   return (
     <section className="isp-filter">
-      <p className="filter-label">
+      <p className="filter-label isp-label">
         <img src={searchIcon} alt="Search icon" className="icon" />
         Filter Internet data by service provider available
       </p>

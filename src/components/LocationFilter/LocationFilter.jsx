@@ -5,7 +5,7 @@ const locations = ["Ikeja", "Lagos", "Nigeria"];
 export default function LocationFilter({ activeLocation, onChange }) {
   return (
     <section className="location-filter">
-      <p className="filter-label">
+      <p className="filter-label location-label">
         <img src={locationIcon} alt="Location icon" className="icon" />
         Filter Internet Service Provider data based on location
       </p>
