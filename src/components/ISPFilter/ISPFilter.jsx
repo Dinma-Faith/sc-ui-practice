@@ -1,4 +1,6 @@
-export default function ISPFilter({ ispOptions, selectedISP, setSelectedISP, searchIcon }) {
+import SearchIcon from "../../assets/icons/filtermail.svg?react";
+
+export default function ISPFilter({ ispOptions, selectedISP, setSelectedISP }) {
   const handleClick = (isp) => {
     setSelectedISP(isp);
     console.log("Selected ISP:", isp);
@@ -6,10 +8,10 @@ export default function ISPFilter({ ispOptions, selectedISP, setSelectedISP, sea
 
   return (
     <section className="isp-filter">
-      <p className="filter-label isp-label">
-        <img src={searchIcon} alt="Search icon" className="icon" />
+      <div className="filter-label isp-label">
+        <SearchIcon className="icon" />
         Filter Internet data by service provider available
-      </p>
+      </div>
 
       <div className="chip-buttons">
         {ispOptions.map((isp) => (

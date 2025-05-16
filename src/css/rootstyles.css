@@ -10,7 +10,7 @@
   --grey-200: hsla(0, 0%, 0%, 1);
   --dark-grey: hsla(264, 6%, 16%, 1);
   --green: hsla(113, 56%, 26%, 1);
-  --black: hsla(0, 0%, 0%, 1);
+  --black: hsla(260, 6%, 16%, 1)
 
   /* TYPOGRAPHY */
   --f-family: 'IBM Plex Sans Devanagari', sans-serif;

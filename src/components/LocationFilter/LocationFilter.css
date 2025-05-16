@@ -28,7 +28,7 @@
   background-color: transparent;
   transition: all 0.3s ease;
   color: var(--light-grey);
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-medium);
   font-size: 1rem;
 }
 

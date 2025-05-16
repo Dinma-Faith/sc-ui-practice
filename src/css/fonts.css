@@ -1,11 +1,9 @@
-  /* IBM Plex Sans Devanagari */
-
 @font-face {
   font-display: swap;
   font-family: 'IBM Plex Sans Devanagari';
   font-style: normal;
   font-weight: 500;
-  src: url('/src/assets/fonts/IBMPlexSansDevanagari-Medium.ttf') format('woff2');
+  src: url('/src/assets/fonts/IBMPlexSansDevanagari-Medium.ttf') format('truetype');
 }
 
 @font-face {
@@ -13,7 +11,7 @@
   font-family: 'IBM Plex Sans Devanagari';
   font-style: normal;
   font-weight: 600;
-  src: url('/src/assets/fonts/IBMPlexSansDevanagari-SemiBold.ttf') format('woff2');
+  src: url('/src/assets/fonts/IBMPlexSansDevanagari-SemiBold.ttf') format('truetype');
 }
 
 @font-face {
@@ -21,7 +19,7 @@
   font-family: 'IBM Plex Sans Devanagari';
   font-style: normal;
   font-weight: 700;
-  src: url('/src/assets/fonts/IBMPlexSansDevanagari-Bold.ttf') format('woff2');
+  src: url('/src/assets/fonts/IBMPlexSansDevanagari-Bold.ttf') format('truetype');
 }
 /* INTER */
 
@@ -30,5 +28,5 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
-  src: url('/src/assets/fonts/Inter-VariableFont_opsz\,wght.ttf') format('woff2'); 
+  src: url('/src/assets/fonts/Inter-VariableFont_opsz\,wght.ttf') format('truetype'); 
 }
