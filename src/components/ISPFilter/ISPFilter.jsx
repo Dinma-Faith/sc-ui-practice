@@ -10,7 +10,7 @@ export default function ISPFilter({ ispOptions, selectedISP, setSelectedISP }) {
     <section className="isp-filter">
       <div className="filter-label isp-label">
         <SearchIcon className="icon" />
-        Filter Internet data by service provider available
+        <p>Filter Internet data by service provider available</p>
       </div>
 
       <div className="chip-buttons">

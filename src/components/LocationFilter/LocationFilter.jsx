@@ -7,7 +7,7 @@ export default function LocationFilter({ activeLocation, onChange }) {
     <section className="location-filter">
       <div className="filter-label location-label">
         <LocationIcon className="icon" />
-        Filter Internet Service Provider data based on location
+        <p>Filter Internet Service Provider data based on location</p>
       </div>
 
       <div className="location-filter-buttons">

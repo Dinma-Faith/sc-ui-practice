@@ -1,6 +1,6 @@
 .isp-filter {
   background-color: var(--white);
-  padding-bottom: 0.5rem;
+  /* padding-bottom: 0.5rem; */
   font-family: var(--f-family);
 }
 
