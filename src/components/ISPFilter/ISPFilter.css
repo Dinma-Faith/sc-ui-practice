@@ -1,0 +1,47 @@
+.isp-filter {
+  background-color: var(--white);
+  /* padding-bottom: 0.5rem; */
+  font-family: var(--f-family);
+}
+
+.isp-label {
+  font-size: 1rem;
+  color: var(--grey-200);
+}
+
+.chip-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4375rem;
+  margin-bottom: 1.25rem;
+  padding-left: 1.1875rem;
+}
+
+.chip {
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625rem 1.25rem;
+  background-color: var(--off-white-200);
+  border: 1px solid var(--white-100);
+  border-radius: 0.25rem;
+  font-weight: var(--fw-bold);
+  color: var(--black);
+  cursor: pointer;
+  box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  font-family: var(--f-family-inter);
+  font-weight: var(--fw-semibold);
+}
+
+.chip:hover,
+.chip:active {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.isp-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.125rem rgba(76, 175, 80, 0.3);
+}
